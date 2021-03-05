@@ -12,4 +12,4 @@ WICHTIG:
 - Dokumente => Nur Download
 
 SHOPWARE 6 - FORUM BEITRAG:
-shorturl.at/lAJM4
+https://shorturl.at/lAJM4
