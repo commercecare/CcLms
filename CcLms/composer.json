@@ -1,0 +1,38 @@
+{
+  "name": "cc/lms",
+  "description": "Commerce Care",
+  "version": "1.1.0",
+  "type": "shopware-platform-plugin",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Commerce Care d.o.o."
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "CcLms\\": "src/"
+    }
+  },
+  "require": {
+    "shopware/core": "*",
+    "shopware/administration": "*",
+    "pickware/pickware-dhl": "*"
+  },
+  "extra": {
+    "shopware-plugin-class": "CcLms\\CcLms",
+    "copyright": "Copyright © 2021. Commerce Care d.o.o.",
+    "label": {
+      "de-DE": "Label Management System (DHL)",
+      "en-GB": "Label Management System (DHL)"
+    },
+    "manufacturerLink": {
+      "de-DE": "https://www.commercecare.de/",
+      "en-GB": "https://www.commercecare.de/"
+    },
+    "supportLink": {
+      "de-DE": "https://www.commercecare.de/",
+      "en-GB": "https://www.commercecare.de/"
+    }
+  }
+}

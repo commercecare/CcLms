@@ -1,0 +1,35 @@
+{% block sw_order_list_smart_bar_actions_slot %}
+    {% parent %}
+
+    {% block sw_order_list_smart_bar_actions_print %}
+
+        {% block sw_order_list_smart_bar_actions_print_actions %}
+            <sw-single-select class="sw-order-list__print-actions-select"
+                              v-model="printAction"
+                              :placeholder="$tc('cc_lms.sw-order.list.print-action.placeholder')"
+                              :options="printActions"
+                              size="medium">
+            </sw-single-select>
+        {% endblock %}
+
+        {% block sw_order_list_smart_bar_actions_print_button %}
+            <sw-button-process
+                    class="sw-order-list__print"
+                    v-tooltip="{
+                                    message: $tc('sw-privileges.tooltip.warning'),
+                                    disabled: acl.can('order.creator'),
+                                    showOnDisabledElements: true
+                                }"
+                    :isLoading="isLoading"
+                    :processSuccess="isPrintSuccessful"
+                    :disabled="!acl.can('order.creator') || isLoading || selectedOrdersIds.length<1 || !printAction"
+                    variant="primary"
+                    @process-finish="printFinish"
+                    @click.prevent="onPrint">
+                {{ $tc('cc_lms.sw-order.list.print-action.button') }}
+            </sw-button-process>
+        {% endblock %}
+
+    {% endblock %}
+
+{% endblock %}

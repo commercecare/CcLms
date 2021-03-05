@@ -1,0 +1,19 @@
+{
+  "cc_lms": {
+    "sw-order": {
+      "list": {
+        "print-action": {
+          "button": "Ausführen",
+          "placeholder": "Aktionen",
+          "options": {
+            "invoice": "Rechnungen drucken",
+            "delivery": "Lieferscheine drucken",
+            "dhl": "DHL-Etiketten drucken"
+          }
+        },
+        "messagePrintSuccess": "Erfolgreich gedruckt.",
+        "messagePrintError": "Während des Druckvorgangs ist ein Fehler aufgetreten. Es sind keine Dokumente zu drucken."
+      }
+    }
+  }
+}

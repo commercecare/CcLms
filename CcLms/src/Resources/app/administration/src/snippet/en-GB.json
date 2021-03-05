@@ -1,0 +1,19 @@
+{
+  "cc_lms": {
+    "sw-order": {
+      "list": {
+        "print-action": {
+          "button": "Execute",
+          "placeholder": "Actions",
+          "options": {
+            "invoice": "Print invoices",
+            "delivery": "Print delivery notes",
+            "dhl": "Print DHL labels"
+          }
+        },
+        "messagePrintSuccess": "Printed successfully.",
+        "messagePrintError": "An error occurred while printing. There is no documents to print."
+      }
+    }
+  }
+}
