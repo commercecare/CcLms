@@ -8,6 +8,6 @@ Neben unserem Plugin müsst Ihr das „DHL Versand“ von PICKWARE installieren 
 
 WICHTIG!
 
-DHL-Labels => Generieren und Download + Statusänderung (Versand & Abgeschlossen)
-Dokumente => Nur Download
+- DHL-Labels => Generieren und Download + Statusänderung (Versand & Abgeschlossen)
+- Dokumente => Nur Download
 
